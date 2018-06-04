@@ -12,6 +12,8 @@
 		16153C7620C5E8930019B378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16153C7520C5E8930019B378 /* Assets.xcassets */; };
 		16153C7920C5E8930019B378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16153C7720C5E8930019B378 /* LaunchScreen.storyboard */; };
 		16153C7C20C5E8930019B378 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16153C7B20C5E8930019B378 /* main.m */; };
+		16153C8F20C5EC770019B378 /* StackOverflowUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 16153C8E20C5EC770019B378 /* StackOverflowUser.m */; };
+		16153C9220C5F5A00019B378 /* StackOverflowUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16153C9120C5F5A00019B378 /* StackOverflowUserController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		16153C7820C5E8930019B378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16153C7A20C5E8930019B378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16153C7B20C5E8930019B378 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16153C8D20C5EC770019B378 /* StackOverflowUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackOverflowUser.h; sourceTree = "<group>"; };
+		16153C8E20C5EC770019B378 /* StackOverflowUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverflowUser.m; sourceTree = "<group>"; };
+		16153C9020C5F5A00019B378 /* StackOverflowUserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackOverflowUserController.h; sourceTree = "<group>"; };
+		16153C9120C5F5A00019B378 /* StackOverflowUserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverflowUserController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 		16153C8520C5EA2E0019B378 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				16153C9020C5F5A00019B378 /* StackOverflowUserController.h */,
+				16153C9120C5F5A00019B378 /* StackOverflowUserController.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -102,6 +110,8 @@
 		16153C8620C5EA370019B378 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				16153C8D20C5EC770019B378 /* StackOverflowUser.h */,
+				16153C8E20C5EC770019B378 /* StackOverflowUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +187,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				16153C7C20C5E8930019B378 /* main.m in Sources */,
+				16153C9220C5F5A00019B378 /* StackOverflowUserController.m in Sources */,
+				16153C8F20C5EC770019B378 /* StackOverflowUser.m in Sources */,
 				16153C6E20C5E8920019B378 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
