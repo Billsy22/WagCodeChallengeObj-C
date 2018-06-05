@@ -14,6 +14,8 @@
 		16153C7C20C5E8930019B378 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16153C7B20C5E8930019B378 /* main.m */; };
 		16153C8F20C5EC770019B378 /* StackOverflowUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 16153C8E20C5EC770019B378 /* StackOverflowUser.m */; };
 		16153C9220C5F5A00019B378 /* StackOverflowUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16153C9120C5F5A00019B378 /* StackOverflowUserController.m */; };
+		16B6F7E920C74F5B00B88715 /* PostListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B6F7E820C74F5B00B88715 /* PostListTableViewController.m */; };
+		16B6F7EC20C750EB00B88715 /* SinglePostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B6F7EB20C750EB00B88715 /* SinglePostTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		16153C8E20C5EC770019B378 /* StackOverflowUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverflowUser.m; sourceTree = "<group>"; };
 		16153C9020C5F5A00019B378 /* StackOverflowUserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackOverflowUserController.h; sourceTree = "<group>"; };
 		16153C9120C5F5A00019B378 /* StackOverflowUserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverflowUserController.m; sourceTree = "<group>"; };
+		16B6F7E720C74F5B00B88715 /* PostListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostListTableViewController.h; sourceTree = "<group>"; };
+		16B6F7E820C74F5B00B88715 /* PostListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostListTableViewController.m; sourceTree = "<group>"; };
+		16B6F7EA20C750EB00B88715 /* SinglePostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinglePostTableViewCell.h; sourceTree = "<group>"; };
+		16B6F7EB20C750EB00B88715 /* SinglePostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinglePostTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 		16153C8420C5EA240019B378 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				16B6F7E720C74F5B00B88715 /* PostListTableViewController.h */,
+				16B6F7E820C74F5B00B88715 /* PostListTableViewController.m */,
+				16B6F7EA20C750EB00B88715 /* SinglePostTableViewCell.h */,
+				16B6F7EB20C750EB00B88715 /* SinglePostTableViewCell.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -189,7 +199,9 @@
 				16153C7C20C5E8930019B378 /* main.m in Sources */,
 				16153C9220C5F5A00019B378 /* StackOverflowUserController.m in Sources */,
 				16153C8F20C5EC770019B378 /* StackOverflowUser.m in Sources */,
+				16B6F7EC20C750EB00B88715 /* SinglePostTableViewCell.m in Sources */,
 				16153C6E20C5E8920019B378 /* AppDelegate.m in Sources */,
+				16B6F7E920C74F5B00B88715 /* PostListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
