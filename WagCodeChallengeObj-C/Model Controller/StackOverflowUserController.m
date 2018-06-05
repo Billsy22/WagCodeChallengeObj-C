@@ -60,5 +60,29 @@ static NSString * const baseURLString = @"https://api.stackexchange.com/2.2/user
     }] resume];
 }
 
+- (void)fetchGravatarForUser:(StackOverflowUser*)user completion:(void (^)(NSData * _Nullable))completion
+{
+    for (StackOverflowUser *user in self.users) {
+        NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:[NSURL URLWithString:[user gravatarURL]] resolvingAgainstBaseURL: YES];
+        NSURL *finalGravatarURL = [urlComponents URL];
+        [[[NSURLSession sharedSession] dataTaskWithURL:finalGravatarURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            if (error) {
+                NSLog(@"Error fetching gravatar images: %@", [error localizedDescription]);
+                return;
+            }
+            NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+            if (!jsonDictionary) {
+                NSLog(@"Error with the json return: %@", [error localizedDescription]);
+                return;
+            }
+            NSData *gravatarImageData = [[NSData alloc] init];
+            NSMutableDictionary *gravatarImages = [NSMutableDictionary dictionary];
+            [gravatarImages setObject:gravatarImageData forKey:[user gravatarURL]];
+            self.gravatarImages = gravatarImages;
+            completion([gravatarImages objectForKey:[user gravatarURL]]);
+        }] resume];
+    }
+}
+
 @end
 NS_ASSUME_NONNULL_END
